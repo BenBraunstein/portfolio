@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header'
+import BlogContainer from './BlogContainer'
 import SocialButtons from './social-media-logos'
 import './App.css';
 import ProjectContainer from './ProjectContainer';
@@ -15,9 +16,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ProjectContainer />
-      <br />
-      <SocialButtons />
+      <BlogContainer />
+
     </div >
   );
 }

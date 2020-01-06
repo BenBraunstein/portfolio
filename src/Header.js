@@ -19,6 +19,12 @@ const useStyles = makeStyles({
     fullList: {
         width: 'auto',
     },
+    root: {
+        flexGrow: 1,
+    },
+    title: {
+        flexGrow: 1,
+    },
 });
 
 
@@ -48,11 +54,18 @@ function Header() {
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
-
-            </List>
-            <Divider />
-            <List>
-
+                <ListItem button >
+                    Home
+                </ListItem>
+                <ListItem button >
+                    Projects
+                </ListItem>
+                <ListItem button >
+                    Blog Posts
+                </ListItem>
+                <ListItem button >
+                    Contact
+                </ListItem>
             </List>
         </div>
     );
@@ -70,6 +83,7 @@ function Header() {
                     <Typography variant="h6" className={classes.title}>
                         Ben Braunstein
                     </Typography>
+
                 </Toolbar>
             </AppBar>
         </div>
