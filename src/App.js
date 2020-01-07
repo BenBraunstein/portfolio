@@ -1,24 +1,21 @@
-import React from 'react';
-import Header from './Header'
-import BlogContainer from './BlogContainer'
-import SocialButtons from './social-media-logos'
-import './App.css';
-import ProjectContainer from './ProjectContainer';
+import React from "react"
+import Header from "./Header"
+import BlogContainer from "./BlogContainer"
+import { Route, Switch, withRouter } from "react-router-dom"
+import "./App.css"
+import ProjectContainer from "./ProjectContainer"
 
-
-function App() {
-  fetch("https://data.feedmirror.com/-Lxc6DxjutQwLFtSKflI.json")
-    .then(resp => resp.json())
-    .then(data => {
-      console.log(data)
-    })
-
+function App(props) {
   return (
     <div className="App">
-      <Header />
-      <BlogContainer />
-
-    </div >
-  );
+      <Header history={props.history} />
+      <Switch>
+        <Route path="/blogs" render={() => <BlogContainer />} />
+        <Route path="/projects" render={() => <ProjectContainer />} />
+        <Route path="/contact" render={() => <div>Contact</div>} />
+        <Route path="/" render={() => <div>Home</div>} />
+      </Switch>
+    </div>
+  )
 }
-export default App;
+export default withRouter(App)

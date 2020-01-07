@@ -19,7 +19,6 @@ const useStyles = makeStyles({
 
 function BlogPost(props) {
   const classes = useStyles()
-  console.log(props)
 
   return (
     <Card className={classes.card}>

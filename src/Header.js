@@ -27,7 +27,7 @@ const useStyles = makeStyles({
   }
 })
 
-function Header() {
+function Header(props) {
   const classes = useStyles()
   const [state, setState] = React.useState({
     top: false,
@@ -55,10 +55,18 @@ function Header() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        <ListItem button>Home</ListItem>
-        <ListItem button>Projects</ListItem>
-        <ListItem button>Blog Posts</ListItem>
-        <ListItem button>Contact</ListItem>
+        <ListItem button onClick={() => props.history.push("/")}>
+          Home
+        </ListItem>
+        <ListItem button onClick={() => props.history.push("/projects")}>
+          Projects
+        </ListItem>
+        <ListItem button onClick={() => props.history.push("/blogs")}>
+          Blog Posts
+        </ListItem>
+        <ListItem button onClick={() => props.history.push("/contact")}>
+          Contact
+        </ListItem>
       </List>
     </div>
   )

@@ -2,7 +2,7 @@ import React from "react"
 import { Grid } from "@material-ui/core"
 import BlogPost from "./BlogPost"
 
-function BlogContainer() {
+function BlogContainer(props) {
   return (
     <div>
       <h2>Blog Posts</h2>
