@@ -6,7 +6,7 @@ function BlogContainer(props) {
   return (
     <div>
       <h2>Blog Posts</h2>
-      <Grid style={{ padding: "30px" }} container spacing={3}>
+      <Grid style={{ padding: "50px" }} container spacing={3}>
         <Grid item xs>
           <BlogPost
             image="https://miro.medium.com/max/498/0*eRCRV3XiHNVub60u"
