@@ -39,7 +39,12 @@ function BlogPost(props) {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          <a href={props.href}>Keep Reading</a>
+          <a
+            style={{ textDecoration: "none", color: "#1976d2" }}
+            href={props.href}
+          >
+            Continue Reading on Medium...
+          </a>
         </Button>
       </CardActions>
     </Card>
