@@ -20,7 +20,7 @@ function BlogContainer(props) {
             image="https://miro.medium.com/max/632/0*mvGwNsYnxuiQAwjz.gif"
             title="How to use React Hooks to give functional components their own 'State'"
             href="https://medium.com/@benzbraunstein/how-to-use-react-hooks-to-give-functional-components-their-own-state-ade4c756244f"
-            description="State in React is something truly awesome. It gives you the ability to create components which have the ability to change their values during the lifetime, whereas a components props never change. Once you give a component a prop, that prop is static and cannot be changed unless the component gets removed or re-rendered. Although state is awesome, it is only accessible to use in components that are Class Based Ones, rather than in Functional Components, however React added “Hooks” a way Functional Components can change their value..."
+            description="State in React is something truly awesome. It gives you the ability to create components which have the ability to change their values during the lifetime, whereas a components props never change. Once you give a component a prop, that prop is static and cannot be changed unless the component gets removed or re-rendered. Although state is awesome, it is only accessible to use in components..."
           />
         </Grid>
         <Grid item xs>
