@@ -4,6 +4,7 @@ import BlogContainer from "./BlogContainer"
 import { Route, Switch, withRouter } from "react-router-dom"
 import "./App.css"
 import ProjectContainer from "./ProjectContainer"
+import Contact from "./Contact"
 
 function App(props) {
   return (
@@ -12,7 +13,7 @@ function App(props) {
       <Switch>
         <Route path="/blogs" render={() => <BlogContainer />} />
         <Route path="/projects" render={() => <ProjectContainer />} />
-        <Route path="/contact" render={() => <div>Contact</div>} />
+        <Route path="/contact" render={() => <Contact />} />
         <Route path="/" render={() => <div>Home</div>} />
       </Switch>
     </div>
