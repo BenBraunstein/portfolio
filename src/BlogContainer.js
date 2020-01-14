@@ -9,6 +9,12 @@ function BlogContainer(props) {
       <Grid style={{ padding: "50px" }} container spacing={3}>
         <Grid item xs>
           <BlogPost
+            image="https://miro.medium.com/max/241/0*DPJBIO0OhFwYB1Jd.png"
+            title="The Power of AutoHotKey for Windows Developers"
+            href="https://medium.com/@benzbraunstein/the-power-of-autohotkey-for-windows-developers-cf2abf85a865"
+            description="If your a developer, I’m sure you know you work far quicker when you can keep your hands on the keyboard and not have to reach for the mouse. Windows developers might have looked at some tools you could use to make your keyboard more powerful and work more efficiently. Simply put, AutoHotKey is one of the most useful tools you can use to your advantage that can help you speed up everyday PC usage and coding. According to their website, it is “a free, open-source scripting language for Windows..."
+          />
+          <BlogPost
             image="https://miro.medium.com/max/498/0*eRCRV3XiHNVub60u"
             title="The Journey from Windows to macOS and back to Windows…"
             href="https://medium.com/@benzbraunstein/the-journey-from-windows-to-macos-and-back-to-windows-12f6311ca424"
