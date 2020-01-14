@@ -1,8 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import emailjs from "emailjs-com"
 import { TextField, Button, Icon } from "@material-ui/core"
+import { Alert } from "@material-ui/lab"
 
 function Contact() {
+  const [contactStatus, changeContactStatus] = useState("unsent")
+
   const onContactFormSubmit = e => {
     e.preventDefault()
     emailjs
@@ -15,9 +18,11 @@ function Contact() {
       .then(
         result => {
           console.log(result.text)
+          changeContactStatus("success")
         },
         error => {
           console.log(error.text)
+          changeContactStatus("error")
         }
       )
   }
@@ -66,6 +71,20 @@ function Contact() {
           Send
         </Button>
       </form>
+      <br />
+      <div
+        style={{ width: "65%", margin: "auto", padding: "20px" }}
+        id="Contact Notification"
+      >
+        {contactStatus === "error" ? (
+          <Alert severity="error">
+            Message Failed to Send! Please Email BenZBraunstein@gmail.com
+          </Alert>
+        ) : null}
+        {contactStatus === "success" ? (
+          <Alert severity="success">Message Successfully Sent!</Alert>
+        ) : null}
+      </div>
     </div>
   )
 }
