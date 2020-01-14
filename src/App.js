@@ -5,6 +5,7 @@ import { Route, Switch, withRouter } from "react-router-dom"
 import "./App.css"
 import ProjectContainer from "./ProjectContainer"
 import Contact from "./Contact"
+import Footer from "./Footer"
 
 function App(props) {
   return (
@@ -16,6 +17,7 @@ function App(props) {
         <Route path="/contact" render={() => <Contact />} />
         <Route path="/" render={() => <div>Home</div>} />
       </Switch>
+      <Footer />
     </div>
   )
 }
