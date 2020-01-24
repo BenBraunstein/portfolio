@@ -187,6 +187,7 @@ function Tradr() {
       <h2>
         <a href="https://tradr-frontend.herokuapp.com/">Try it on Heroku!</a>
       </h2>
+      <br />
     </div>
   )
 }

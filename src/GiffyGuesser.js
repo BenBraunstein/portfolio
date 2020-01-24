@@ -166,6 +166,7 @@ function GiffyGuesser() {
       <h2>
         <a href="https://giffyguesser.herokuapp.com/">Try it on Heroku!</a>
       </h2>
+      <br />
     </div>
   )
 }

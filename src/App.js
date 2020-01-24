@@ -8,6 +8,7 @@ import Contact from "./Contact"
 import Footer from "./Footer"
 import Tradr from "./Tradr"
 import GiffyGuesser from "./GiffyGuesser"
+import Home from "./Home"
 
 function App(props) {
   return (
@@ -19,7 +20,7 @@ function App(props) {
         <Route path="/projects/giffyguesser" render={() => <GiffyGuesser />} />
         <Route path="/projects" render={() => <ProjectContainer />} />
         <Route path="/contact" render={() => <Contact />} />
-        <Route path="/" render={() => <div>Home</div>} />
+        <Route path="/" render={() => <Home />} />
       </Switch>
       <Footer />
     </div>
