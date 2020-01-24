@@ -7,19 +7,24 @@ function BlogContainer(props) {
     <div>
       <h2>Blog Posts</h2>
       <Grid style={{ padding: "50px" }} container spacing={3}>
-        <Grid item xs>
+        <Grid style={{ flexBasis: "auto" }} item xs>
           <BlogPost
             image="https://miro.medium.com/max/1515/0*o_fGIoKcDCK40Sck.png"
             title="How to get a basic Redux.js application working"
             href="https://medium.com/@benzbraunstein/how-to-get-a-basic-redux-js-application-working-a08205442e30"
             description="If your a front end developer, who uses React.js, you’ve probably know how frustrating it can be to manage your state by passing it up and down through components and youve also probably heard of a technology called Redux.js, which is created to eliminate the frustrations of managing state. Not only does Redux centralize your state into a “Redux Store”, I also centralizes a large portion of your applications logic and has an outstanding Google Chrome extension you can use to view your store, any changes to it in..."
           />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item xs>
           <BlogPost
             image="https://miro.medium.com/max/241/0*DPJBIO0OhFwYB1Jd.png"
             title="The Power of AutoHotKey for Windows Developers"
             href="https://medium.com/@benzbraunstein/the-power-of-autohotkey-for-windows-developers-cf2abf85a865"
             description="If your a developer, I’m sure you know you work far quicker when you can keep your hands on the keyboard and not have to reach for the mouse. Windows developers might have looked at some tools you could use to make your keyboard more powerful and work more efficiently. Simply put, AutoHotKey is one of the most useful tools you can use to your advantage that can help you speed up everyday PC usage and coding. According to their website, it is “a free, open-source scripting language for Windows..."
           />
+        </Grid>
+
+        <Grid style={{ flexBasis: "auto" }} item xs>
           <BlogPost
             image="https://miro.medium.com/max/498/0*eRCRV3XiHNVub60u"
             title="The Journey from Windows to macOS and back to Windows…"
@@ -27,7 +32,7 @@ function BlogContainer(props) {
             description="Since I was a young child, I was blessed to have the opportunity of having personal computers in my home. I loved everything about them. Using them, fixing them… and sometimes breaking them. The PCs in my home started with Windows XP, next up was Vista and eventually Windows 7 (my parents never wanted to upgrade to Windows 10)..."
           />
         </Grid>
-        <Grid item xs>
+        <Grid style={{ flexBasis: "auto" }} item xs>
           <BlogPost
             image="https://miro.medium.com/max/632/0*mvGwNsYnxuiQAwjz.gif"
             title="How to use React Hooks to give functional components their own 'State'"
@@ -35,7 +40,7 @@ function BlogContainer(props) {
             description="State in React is something truly awesome. It gives you the ability to create components which have the ability to change their values during the lifetime, whereas a components props never change. Once you give a component a prop, that prop is static and cannot be changed unless the component gets removed or re-rendered. Although state is awesome, it is only accessible to use in components..."
           />
         </Grid>
-        <Grid item xs>
+        <Grid style={{ flexBasis: "auto" }} item xs>
           <BlogPost
             image="https://miro.medium.com/max/1168/1*lJuK3pJiMt5g1-AJfRPpsg.png"
             title="How to build a simple chat application using JavaScript and the Rails API"
@@ -43,7 +48,7 @@ function BlogContainer(props) {
             description="Ever wondered how difficult it is to create a basic chat application by yourself (please just play along) ? I wondered the exact same thing once I dove headfirst into JavaScript and began to ponder all the awesome projects I could build using the awesome language. I decided to give this project a go and see how difficult it would be for me to build…and in about an hour and a half my basic application was complete..."
           />
         </Grid>
-        <Grid item xs>
+        <Grid style={{ flexBasis: "auto" }} item xs>
           <BlogPost
             image="https://s3.amazonaws.com/law-media/uploads/131/51997/large/man_suit_mask_impersonation_ss.jpg?1525714001"
             title="Be afraid. I can impersonate you"
