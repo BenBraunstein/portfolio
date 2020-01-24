@@ -30,7 +30,9 @@ function Contact() {
   return (
     <div style={{ marginTop: "50px" }}>
       Email Me:{"   "}
-      <a href="mailto:BenZBraunstein@gmail.com">BenZBraunstein@gmail.com</a>
+      <a href="mailto:BenZBraunstein@gmail.com?subject=Hi From Your Portfolio Site">
+        BenZBraunstein@gmail.com
+      </a>
       <br />
       <br />
       <form id="contact-form" onSubmit={onContactFormSubmit}>
