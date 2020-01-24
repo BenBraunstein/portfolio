@@ -29,13 +29,13 @@ function Contact() {
 
   return (
     <div style={{ marginTop: "50px" }}>
-      Email Me:
-      <a href="mailto:BenZBraunstein@gmail.com"> BenZBraunstein@gmail.com</a>
+      Email Me:{"   "}
+      <a href="mailto:BenZBraunstein@gmail.com">BenZBraunstein@gmail.com</a>
+      <br />
       <br />
       <form id="contact-form" onSubmit={onContactFormSubmit}>
-        Contact Form
+        <h2>Contact Form</h2>
         <input type="hidden" name="contact_number" />
-        <br />
         <TextField
           id="standard-basic"
           style={{ width: "300px" }}

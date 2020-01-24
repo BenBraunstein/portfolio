@@ -29,7 +29,7 @@ function BlogContainer(props) {
             image="https://miro.medium.com/max/498/0*eRCRV3XiHNVub60u"
             title="The Journey from Windows to macOS and back to Windows…"
             href="https://medium.com/@benzbraunstein/the-journey-from-windows-to-macos-and-back-to-windows-12f6311ca424"
-            description="Since I was a young child, I was blessed to have the opportunity of having personal computers in my home. I loved everything about them. Using them, fixing them… and sometimes breaking them. The PCs in my home started with Windows XP, next up was Vista and eventually Windows 7 (my parents never wanted to upgrade to Windows 10)..."
+            description="Since I was a young child, I was blessed to have the opportunity of having personal computers in my home. I loved everything about them. Using them, fixing them… and sometimes breaking them. The PCs in my home started with Windows XP, next up was Vista and eventually Windows 7 (my parents never wanted to upgrade to Windows 10). Throughout my life I got to learn the in’s and out’s of Windows and..."
           />
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item xs>

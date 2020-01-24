@@ -21,7 +21,10 @@ function BlogPost(props) {
   const classes = useStyles()
 
   return (
-    <Card style={{ marginBottom: "40px" }} className={classes.card}>
+    <Card
+      style={{ marginBottom: "40px", height: "511px" }}
+      className={classes.card}
+    >
       <CardActionArea>
         <CardMedia
           className={classes.media}
