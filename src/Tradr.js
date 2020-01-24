@@ -67,7 +67,7 @@ function Tradr() {
   ]
 
   return (
-    <div>
+    <div style={{ width: "70%", margin: "auto" }}>
       <h1>Tradr</h1>
       <h2>Motivation</h2>
       <p>
