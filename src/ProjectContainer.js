@@ -5,6 +5,8 @@ import GiffyGuesser from "./GiffyGuesser"
 function ProjectContainer() {
   return (
     <div className="tradr">
+      <Tradr />
+      <br />
       <GiffyGuesser />
     </div>
   )

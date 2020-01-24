@@ -6,6 +6,8 @@ import "./App.css"
 import ProjectContainer from "./ProjectContainer"
 import Contact from "./Contact"
 import Footer from "./Footer"
+import Tradr from "./Tradr"
+import GiffyGuesser from "./GiffyGuesser"
 
 function App(props) {
   return (
@@ -13,6 +15,8 @@ function App(props) {
       <Header history={props.history} />
       <Switch>
         <Route path="/blogs" render={() => <BlogContainer />} />
+        <Route path="/projects/tradr" render={() => <Tradr />} />
+        <Route path="/projects/giffyguesser" render={() => <GiffyGuesser />} />
         <Route path="/projects" render={() => <ProjectContainer />} />
         <Route path="/contact" render={() => <Contact />} />
         <Route path="/" render={() => <div>Home</div>} />
