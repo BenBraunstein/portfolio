@@ -67,7 +67,7 @@ function Tradr() {
   ]
 
   return (
-    <Container className={classes.root}>
+    <Container key="Tradr" className={classes.root}>
       <h1>Tradr</h1>
       <GridList className={classes.gridList} cols={2.5}>
         {tileData.map(tile => (

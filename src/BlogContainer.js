@@ -9,6 +9,12 @@ function BlogContainer(props) {
       <Grid style={{ padding: "50px" }} container spacing={3}>
         <Grid item xs>
           <BlogPost
+            image="https://miro.medium.com/max/1515/0*o_fGIoKcDCK40Sck.png"
+            title="How to get a basic Redux.js application working"
+            href="https://medium.com/@benzbraunstein/how-to-get-a-basic-redux-js-application-working-a08205442e30"
+            description="If your a front end developer, who uses React.js, you’ve probably know how frustrating it can be to manage your state by passing it up and down through components and youve also probably heard of a technology called Redux.js, which is created to eliminate the frustrations of managing state. Not only does Redux centralize your state into a “Redux Store”, I also centralizes a large portion of your applications logic and has an outstanding Google Chrome extension you can use to view your store, any changes to it in..."
+          />
+          <BlogPost
             image="https://miro.medium.com/max/241/0*DPJBIO0OhFwYB1Jd.png"
             title="The Power of AutoHotKey for Windows Developers"
             href="https://medium.com/@benzbraunstein/the-power-of-autohotkey-for-windows-developers-cf2abf85a865"
