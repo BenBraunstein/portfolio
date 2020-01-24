@@ -21,36 +21,40 @@ function BlogPost(props) {
   const classes = useStyles()
 
   return (
-    <Card
-      style={{ marginBottom: "40px", height: "511px" }}
-      className={classes.card}
-    >
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={props.image}
-          title={props.title}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.title}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          <a
-            style={{ textDecoration: "none", color: "#1976d2" }}
-            href={props.href}
-          >
-            Continue Reading on Medium...
-          </a>
-        </Button>
-      </CardActions>
-    </Card>
+    <a href={props.href}>
+      <Card
+        style={{
+          marginBottom: "40px",
+          height: "515px",
+          textDecoration: "none"
+        }}
+        className={classes.card}
+      >
+        <CardActionArea>
+          <CardMedia
+            className={classes.media}
+            image={props.image}
+            title={props.title}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {props.title}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {props.description}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            <p style={{ textDecoration: "none", color: "#1976d2" }}>
+              {" "}
+              Continue Reading on Medium...
+            </p>
+          </Button>
+        </CardActions>
+      </Card>
+    </a>
   )
 }
 

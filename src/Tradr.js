@@ -118,6 +118,18 @@ function Tradr() {
           ))}
         </GridList>
       </Container>
+      <h2>
+        <a href="https://github.com/BenBraunstein/tradr-front">
+          Front-End Github
+        </a>{" "}
+        |{" "}
+        <a href="https://github.com/MildlyConfused/tradr-backend">
+          Back-End Github
+        </a>
+      </h2>
+      <h2>
+        <a href="https://tradr-frontend.herokuapp.com/">Try it on Heroku!</a>
+      </h2>
     </div>
   )
 }
