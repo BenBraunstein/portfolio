@@ -90,6 +90,14 @@ function Header(props) {
           <Typography variant="h6" className={classes.title}>
             Ben Braunstein
           </Typography>
+          <Typography variant="h6" className={classes.title}>
+            <a
+              href="mailto:BenZBraunstein@gmail.com?subject=Hi From Your Portfolio Site"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              BenZBraunstein@gmail.com
+            </a>
+          </Typography>
         </Toolbar>
       </AppBar>
     </div>
