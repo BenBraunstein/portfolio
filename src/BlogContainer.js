@@ -9,6 +9,14 @@ function BlogContainer(props) {
       <Grid style={{ padding: "50px" }} container spacing={3}>
         <Grid style={{ flexBasis: "auto" }} item xs>
           <BlogPost
+            image="https://miro.medium.com/max/1200/0*IilLY81EZm_YjHgb.jpeg"
+            title="Hosting your Rails Backend and React Frontend on Herkou for free!"
+            href="https://medium.com/@benzbraunstein/hosting-your-rails-backend-and-react-frontend-on-herkou-for-free-863b86542d09"
+            description="As I Fullstack developer, I typically use Ruby on Rails to create a Backend API and React Frontend when building out new projects. But what good is an app if you can’t put it online for your friends and the rest of the world to see. Today I’m going to show you how to host your projects on Heroku. Heroku will host your apps free of charge. All users on Heroku get up to five free apps, but if you link a credit card..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item xs>
+          <BlogPost
             image="https://miro.medium.com/max/1515/0*o_fGIoKcDCK40Sck.png"
             title="How to get a basic Redux.js application working"
             href="https://medium.com/@benzbraunstein/how-to-get-a-basic-redux-js-application-working-a08205442e30"
