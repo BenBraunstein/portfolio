@@ -34,6 +34,11 @@ function Contact() {
         BenZBraunstein@gmail.com
       </a>
       <br />
+      Text Me:{"   "}
+      <a href="sms:+1-516-477-8178?body=Hey Ben, I love your website!">
+        516-477-8178
+      </a>
+      <br />
       <br />
       <form id="contact-form" onSubmit={onContactFormSubmit}>
         <h2>Contact Form</h2>
