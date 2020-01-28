@@ -96,6 +96,13 @@ function Header(props) {
               style={{ color: "white", textDecoration: "none" }}
             >
               BenZBraunstein@gmail.com
+            </a>{" "}
+            /{" "}
+            <a
+              href="sms:+1-516-477-8178?body=Hey Ben, I love your website!"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              516-477-8178
             </a>
           </Typography>
         </Toolbar>
