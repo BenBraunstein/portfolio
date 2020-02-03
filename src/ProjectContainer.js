@@ -5,6 +5,8 @@ import { makeStyles } from "@material-ui/core/styles"
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core"
 import PeopleIcon from "@material-ui/icons/People"
 import VideogameAssetIcon from "@material-ui/icons/VideogameAsset"
+import NotListedLocationIcon from "@material-ui/icons/NotListedLocation"
+import FactFun from "./FactFun"
 
 const useStyles = makeStyles({
   root: {
@@ -22,9 +24,12 @@ function ProjectContainer() {
       <h1>Projects</h1>
       {value === 0 ? <Tradr /> : null}
       {value === 1 ? <GiffyGuesser /> : null}
+      {value === 2 ? <FactFun /> : null}
+
       <BottomNavigation
         value={value}
         onChange={(event, newValue) => {
+          console.log(newValue)
           setValue(newValue)
         }}
         showLabels
@@ -34,6 +39,10 @@ function ProjectContainer() {
         <BottomNavigationAction
           label="Giffy Guesser"
           icon={<VideogameAssetIcon />}
+        />
+        <BottomNavigationAction
+          label="Fact Fun"
+          icon={<NotListedLocationIcon />}
         />
       </BottomNavigation>
     </div>
