@@ -1,12 +1,12 @@
 import React from "react"
 import Tradr from "./Tradr"
 import GiffyGuesser from "./GiffyGuesser"
+import FactFun from "./FactFun"
 import { makeStyles } from "@material-ui/core/styles"
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core"
 import PeopleIcon from "@material-ui/icons/People"
 import VideogameAssetIcon from "@material-ui/icons/VideogameAsset"
 import NotListedLocationIcon from "@material-ui/icons/NotListedLocation"
-import FactFun from "./FactFun"
 
 const useStyles = makeStyles({
   root: {

@@ -76,40 +76,27 @@ function FactFun() {
 
   return (
     <div style={{ width: "70%", margin: "auto" }}>
-      <h1>Giffy Guesser</h1>
+      <h1>Fact Fun</h1>
       <h2>Motivation</h2>
       <p>
-        Everyone loves a good gif, but have you ever played a multiple choice
-        game where you try and pick specific gifts? Thats exactly why we made
-        one.
-        <br />
-        We built an application which automatically generates questions for our
-        four game modes:
-        <ul>
-          <li>
-            The Synonym Game - Try and guess the search term that found this Gif
-          </li>
-          <li>The Dog Breed Game - Try and guess the dog breed in this Gif</li>
-          <li>The Movie Game - Try and Guess the movie this Gif comes from</li>
-          <li>
-            The Matching Game - Given a searched term and 4 Gifs. Try and guess
-            the least popular Gif for from this search term
-          </li>
-        </ul>
+        Quite simply, whe discovered the CIA World Factbook API and thought,
+        "how can we not use this!?" It was extra fun too, because as part of our
+        entrance exam we had to pass an infamous exercise known as
+        "Hashketball", and the JSON data was so deeply nested this felt like
+        "Hashketball 2!"
       </p>
       <h2>Frameworks</h2>
       <p>
-        This app is created with the Rails MVC Framework and uses the Tenor API
-        to find Gifs.
+        This app uses vanilla Javascript with a Rails API backend to track user
+        scores.
       </p>
       <h2>How to use:</h2>
       <p>
-        Sign up or log in to an existing account. Click "Choose a Game", then
-        pick the type of game you want to play. You can also challenege another
-        user who has recently played and play the exact same game as they did to
-        try and beat their score and get your name to the top of the
-        leaderboards for that game. In your profile you can see your completed
-        games as well as your overall statistics in all game types.
+        When you've opened test.html, either sign up or log in. Once you're
+        logged in, you can play the game! Read over the facts presented, and
+        click the one of four presented countries you believe is the country
+        being described. If you're right, you get points! If not, you don't!
+        Either way, it's fun!
       </p>
       <h2>Screenshots</h2>
       <Container key="FactFun" className={classes.root}>
@@ -161,10 +148,16 @@ function FactFun() {
         </Fade>
       </Modal>
       <h2>
-        <a href="https://github.com/BenBraunstein/GifGame">Github Page</a>
+        <a href="https://github.com/BenBraunstein/Fact-Fun">Front-End Github</a>{" "}
+        |{" "}
+        <a href="https://github.com/nicholasstano/Fact-Fun-Backend">
+          Back-End Github
+        </a>
       </h2>
       <h2>
-        <a href="https://giffyguesser.herokuapp.com/">Try it on Heroku!</a>
+        <a href="https://benbraunstein.github.io/Fact-Fun/test.html">
+          Try it on GitHub Pages!
+        </a>
       </h2>
       <br />
     </div>
