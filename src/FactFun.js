@@ -58,19 +58,24 @@ function FactFun() {
 
   const tileData = [
     {
-      title: "Homepage",
-      url:
-        "https://camo.githubusercontent.com/cc0e604a598085aad3d6077e157045e161e301ae/68747470733a2f2f692e696d6775722e636f6d2f6d4363424f5a5a2e706e67"
+      title: "Example Question",
+      url: "https://i.imgur.com/u2RqCm1.png"
     },
     {
-      title: "Matching Game Question",
-      url:
-        "https://camo.githubusercontent.com/be259047b69025141440ceab0c878c269512d98c/68747470733a2f2f692e696d6775722e636f6d2f546d4b586e6b452e706e67"
+      title: "Leaderboards",
+      url: "https://i.imgur.com/6tBcEdt.png"
     },
     {
-      title: "Incorrectly Answered Movie Question",
-      url:
-        "https://camo.githubusercontent.com/354a1ac43df9e67fae92794d935c4ec4bb1809de/68747470733a2f2f692e696d6775722e636f6d2f33434e397043752e706e67"
+      title: "Correct Answer",
+      url: "https://i.imgur.com/5vJ6RJ8.png"
+    },
+    {
+      title: "Incorrect Answer",
+      url: "https://i.imgur.com/XJgvGHJ.png"
+    },
+    {
+      title: "Score Tracking",
+      url: "https://i.imgur.com/fi5DwAm.png"
     }
   ]
 
