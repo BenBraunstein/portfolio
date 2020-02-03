@@ -22,7 +22,7 @@ function App(props) {
         <Route path="/contact" render={() => <Contact />} />
         <Route path="/" render={() => <Home />} />
       </Switch>
-      <Footer />
+      <Footer date={new Date()} />
     </div>
   )
 }
