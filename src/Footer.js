@@ -8,7 +8,7 @@ function Footer(props) {
       <SocialButtons />
       <div>
         Copyright © 2020{" "}
-        {props.date.getFullYear() == 2020
+        {props.date.getFullYear() === 2020
           ? null
           : `- ${props.date.getFullYear()}`}{" "}
         Ben Braunstein
