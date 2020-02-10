@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "./Header"
 import BlogContainer from "./BlogContainer"
 import { Route, Switch, withRouter } from "react-router-dom"
@@ -9,10 +9,21 @@ import Footer from "./Footer"
 import Tradr from "./Tradr"
 import GiffyGuesser from "./GiffyGuesser"
 import Home from "./Home"
+import Cursor from "./Cursor"
 
 function App(props) {
+  const [mouseX, changeX] = useState(0)
+  const [mouseY, changeY] = useState(0)
+
   return (
-    <div className="App">
+    <div
+      className="App"
+      onMouseMove={e => {
+        changeX(e.pageX)
+        changeY(e.pageY)
+      }}
+    >
+      <Cursor mouseX={mouseX} mouseY={mouseY} />
       <Header history={props.history} />
       <Switch>
         <Route path="/blogs" render={() => <BlogContainer />} />

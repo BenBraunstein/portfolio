@@ -1,6 +1,7 @@
 import React from "react"
 
-function Cursor() {
+function Cursor(props) {
+  console.log(props)
   return <div className="cursor"></div>
 }
 
