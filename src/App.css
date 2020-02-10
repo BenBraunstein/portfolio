@@ -22,10 +22,10 @@
   transition: all 0.2s ease;
   transition-property: background, border, transform;
   transform-origin: 150% 150%;
-  z-index: 100;
+  z-index: 999999;
 }
 
-.li-grow {
+.img-grow {
   transform: scale(1.5);
   background: black;
 }

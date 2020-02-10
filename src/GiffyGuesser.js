@@ -125,8 +125,6 @@ function GiffyGuesser() {
                     title: e.target.alt,
                     href: e.target.src
                   })
-                  console.log("Variable", currentImage)
-                  console.log("Clicked", e.target.alt)
                   handleOpen()
                 }}
               />

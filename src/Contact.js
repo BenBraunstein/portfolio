@@ -17,11 +17,9 @@ function Contact() {
       )
       .then(
         result => {
-          console.log(result.text)
           changeContactStatus("success")
         },
         error => {
-          console.log(error.text)
           changeContactStatus("error")
         }
       )

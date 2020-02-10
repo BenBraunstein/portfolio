@@ -29,7 +29,6 @@ function ProjectContainer() {
       <BottomNavigation
         value={value}
         onChange={(event, newValue) => {
-          console.log(newValue)
           setValue(newValue)
         }}
         showLabels
