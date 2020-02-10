@@ -24,6 +24,24 @@
   transform-origin: 150% 150%;
 }
 
+.li-grow {
+  transform: scale(1.5);
+  background: black;
+}
+
+.li-hover {
+  color: orangered;
+}
+
+.mouse-down {
+  border: 2px solid cornflowerblue;
+  background: cornflowerblue;
+}
+
+.mouse-left {
+  display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

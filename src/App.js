@@ -14,6 +14,7 @@ import Cursor from "./Cursor"
 function App(props) {
   const [xcord, changex] = useState(0)
   const [ycord, changey] = useState(0)
+  const [cursorClasses, changeClasses] = useState(["cursor"])
 
   return (
     <div
@@ -22,9 +23,12 @@ function App(props) {
         changex(e.pageX + "px")
         changey(e.pageY + "px")
       }}
+      onMouseDown={() => {
+        console.log("mouse down")
+      }}
     >
       <Header history={props.history} />
-      <Cursor xcord={xcord} ycord={ycord} />
+      <Cursor classes={cursorClasses} xcord={xcord} ycord={ycord} />
       <Switch>
         <Route path="/blogs" render={() => <BlogContainer />} />
         <Route path="/projects/tradr" render={() => <Tradr />} />
