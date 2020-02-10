@@ -24,7 +24,12 @@ function App(props) {
         changey(e.pageY + "px")
       }}
       onMouseDown={() => {
-        console.log("mouse down")
+        changeClasses([...cursorClasses, "mouse-down"])
+      }}
+      onMouseUp={() => {
+        changeClasses(
+          cursorClasses.filter(className => className !== "mouse-down")
+        )
       }}
     >
       <Header history={props.history} />
