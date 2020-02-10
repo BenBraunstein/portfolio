@@ -1,8 +1,12 @@
 import React from "react"
 
 function Cursor(props) {
-  console.log(props)
-  return <div className="cursor"></div>
+  return (
+    <div
+      className="cursor"
+      style={{ top: props.ycord, left: props.xcord }}
+    ></div>
+  )
 }
 
 export default Cursor

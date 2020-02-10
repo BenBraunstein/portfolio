@@ -1,3 +1,7 @@
+* {
+  cursor: none;
+}
+
 .App {
   text-align: center;
 }
@@ -18,7 +22,6 @@
   transition: all 0.2s ease;
   transition-property: background, border, transform;
   transform-origin: 150% 150%;
-  z-index: -2;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -12,19 +12,19 @@ import Home from "./Home"
 import Cursor from "./Cursor"
 
 function App(props) {
-  const [mouseX, changeX] = useState(0)
-  const [mouseY, changeY] = useState(0)
+  const [xcord, changex] = useState(0)
+  const [ycord, changey] = useState(0)
 
   return (
     <div
       className="App"
       onMouseMove={e => {
-        changeX(e.pageX)
-        changeY(e.pageY)
+        changex(e.pageX + "px")
+        changey(e.pageY + "px")
       }}
     >
-      <Cursor mouseX={mouseX} mouseY={mouseY} />
       <Header history={props.history} />
+      <Cursor xcord={xcord} ycord={ycord} />
       <Switch>
         <Route path="/blogs" render={() => <BlogContainer />} />
         <Route path="/projects/tradr" render={() => <Tradr />} />
