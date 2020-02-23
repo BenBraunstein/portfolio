@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Header from "./Header"
 import BlogContainer from "./BlogContainer"
 import { Route, Switch, withRouter } from "react-router-dom"

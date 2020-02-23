@@ -17,6 +17,14 @@ function BlogContainer(props) {
         </Grid> */}
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            image="https://miro.medium.com/max/398/0*6uCZiBDhbBuu_rZH.gif"
+            title="Using JavaScript and CSS to make custom Cursors"
+            href="https://medium.com/@benzbraunstein/using-javascript-and-css-to-make-custom-cursors-dd75d40520"
+            description="Recently, I was on Adult Swim’s Website and I immediately noticed that their website takes control of the cursor, removes it from the screen and puts an image an it’s place. Originally, I thought it was cool, but I never went any further with it. A day or two later I was couldn’t get the idea out of my head, so I thought I would give it a try and put my own twist on it. I started by making a basic HTML page and linking it with a JavaScript script and a CSS file. I also threw in some text in a list to put something..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item s>
+          <BlogPost
             image="https://miro.medium.com/max/460/1*gFQLJWUQBtfNqeBcfu3h2Q.png"
             title="How to connect a Heroku Website with a GoDaddy Domain Name"
             href="https://medium.com/@benzbraunstein/how-to-connect-a-heroku-website-with-a-godaddy-domain-name-2661e3fda5fd"
