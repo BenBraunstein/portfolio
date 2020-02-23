@@ -17,6 +17,14 @@ function BlogContainer(props) {
         </Grid> */}
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            image="https://miro.medium.com/max/810/1*RvdtnXK3vFZgiJF1_fZVpw.png"
+            title="The Ternary Operator"
+            href="https://medium.com/@benzbraunstein/the-ternary-operator-d413d26bd36d"
+            description="Some beginner developers may see the above line of code and be extremely confused. This syntax is not a very typical one and may even look wrong, however, the above line is perfectly legal. Can you guess what it does ? This is a ternary operator and we are using it to compare two numbers return the greater of the two. That one line ternary operator completes the same purpose as this much longer if-else block; find the greater of the two and store int in a variable. Ternary operators are very similar to writing if-else blocks, however ternary operators always..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item s>
+          <BlogPost
             image="https://miro.medium.com/max/300/0*cUI1-6riD1DuNPEj"
             title="AutoHotKey, the Update"
             href="https://medium.com/@benzbraunstein/autohotkey-the-update-ee7bdfd6dbf7"
