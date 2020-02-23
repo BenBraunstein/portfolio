@@ -17,6 +17,14 @@ function BlogContainer(props) {
         </Grid> */}
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            image="https://miro.medium.com/max/300/0*cUI1-6riD1DuNPEj"
+            title="AutoHotKey, the Update"
+            href="https://medium.com/@benzbraunstein/autohotkey-the-update-ee7bdfd6dbf7"
+            description="Recently, I wrote a blog post about AutoHotKey, which according to their team is a “a free, open-source scripting language for Windows that allows users to easily create small to complex scripts for all kinds of tasks such as: form fillers, auto-clicking, macros, etc”. Its a great tool Windows users can use for not only development purposes but navigating and speeding up tasks in Windows overall. I have recently switched from MacOS to Windows 10 using WSL2 and it has been going very well. One of the primary reasons I decided to use AutoHotKey, was to remap..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item s>
+          <BlogPost
             image="https://miro.medium.com/max/398/0*6uCZiBDhbBuu_rZH.gif"
             title="Using JavaScript and CSS to make custom Cursors"
             href="https://medium.com/@benzbraunstein/using-javascript-and-css-to-make-custom-cursors-dd75d40520"
