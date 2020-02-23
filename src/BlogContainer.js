@@ -17,6 +17,8 @@ function BlogContainer(props) {
         </Grid> */}
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/810/1*RvdtnXK3vFZgiJF1_fZVpw.png"
             title="The Ternary Operator"
             href="https://medium.com/@benzbraunstein/the-ternary-operator-d413d26bd36d"
@@ -25,6 +27,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/300/0*cUI1-6riD1DuNPEj"
             title="AutoHotKey, the Update"
             href="https://medium.com/@benzbraunstein/autohotkey-the-update-ee7bdfd6dbf7"
@@ -33,6 +37,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/398/0*6uCZiBDhbBuu_rZH.gif"
             title="Using JavaScript and CSS to make custom Cursors"
             href="https://medium.com/@benzbraunstein/using-javascript-and-css-to-make-custom-cursors-dd75d40520"
@@ -41,6 +47,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/460/1*gFQLJWUQBtfNqeBcfu3h2Q.png"
             title="How to connect a Heroku Website with a GoDaddy Domain Name"
             href="https://medium.com/@benzbraunstein/how-to-connect-a-heroku-website-with-a-godaddy-domain-name-2661e3fda5fd"
@@ -49,6 +57,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/1200/0*IilLY81EZm_YjHgb.jpeg"
             title="Hosting your Rails Backend and React Frontend on Herkou for free!"
             href="https://medium.com/@benzbraunstein/hosting-your-rails-backend-and-react-frontend-on-herkou-for-free-863b86542d09"
@@ -57,6 +67,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/1515/0*o_fGIoKcDCK40Sck.png"
             title="How to get a basic Redux.js application working"
             href="https://medium.com/@benzbraunstein/how-to-get-a-basic-redux-js-application-working-a08205442e30"
@@ -65,6 +77,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/241/0*DPJBIO0OhFwYB1Jd.png"
             title="The Power of AutoHotKey for Windows Developers"
             href="https://medium.com/@benzbraunstein/the-power-of-autohotkey-for-windows-developers-cf2abf85a865"
@@ -73,6 +87,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/498/0*eRCRV3XiHNVub60u"
             title="The Journey from Windows to macOS and back to Windows…"
             href="https://medium.com/@benzbraunstein/the-journey-from-windows-to-macos-and-back-to-windows-12f6311ca424"
@@ -81,6 +97,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/632/0*mvGwNsYnxuiQAwjz.gif"
             title="How to use React Hooks to give functional components their own 'State'"
             href="https://medium.com/@benzbraunstein/how-to-use-react-hooks-to-give-functional-components-their-own-state-ade4c756244f"
@@ -89,6 +107,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/1168/1*lJuK3pJiMt5g1-AJfRPpsg.png"
             title="How to build a simple chat application using JavaScript and the Rails API"
             href="https://medium.com/@benzbraunstein/how-to-build-a-simple-chat-application-using-javascript-and-the-rails-api-68c2577db9ea"
@@ -97,6 +117,8 @@ function BlogContainer(props) {
         </Grid>
         <Grid style={{ flexBasis: "auto" }} item s>
           <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://s3.amazonaws.com/law-media/uploads/131/51997/large/man_suit_mask_impersonation_ss.jpg?1525714001"
             title="Be afraid. I can impersonate you"
             href="https://medium.com/@benzbraunstein/be-weary-i-can-impersonate-you-adb51ede042a"

@@ -16,6 +16,13 @@ function App(props) {
   const [ycord, changey] = useState(0)
   const [cursorClasses, changeClasses] = useState(["cursor"])
 
+  const blogHover = e => {
+    changeClasses([...cursorClasses, "img-grow"])
+  }
+  const blogUnHover = e => {
+    changeClasses(cursorClasses.filter(className => className !== "img-grow"))
+  }
+
   return (
     <div
       className="App"
@@ -43,7 +50,12 @@ function App(props) {
       <Header history={props.history} />
       <Cursor classes={cursorClasses} xcord={xcord} ycord={ycord} />
       <Switch>
-        <Route path="/blogs" render={() => <BlogContainer />} />
+        <Route
+          path="/blogs"
+          render={() => (
+            <BlogContainer blogHover={blogHover} blogUnHover={blogUnHover} />
+          )}
+        />
         <Route path="/projects/tradr" render={() => <Tradr />} />
         <Route path="/projects/giffyguesser" render={() => <GiffyGuesser />} />
         <Route path="/projects" render={() => <ProjectContainer />} />

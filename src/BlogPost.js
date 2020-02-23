@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import Card from "@material-ui/core/Card"
 import CardActionArea from "@material-ui/core/CardActionArea"
@@ -19,9 +19,20 @@ const useStyles = makeStyles({
 
 function BlogPost(props) {
   const classes = useStyles()
+  const [textColor, changeTextColor] = useState("black")
 
   return (
-    <a href={props.href}>
+    <a
+      href={props.href}
+      onMouseOver={e => {
+        props.blogHover(e)
+        changeTextColor("blue")
+      }}
+      onMouseOut={e => {
+        props.blogUnHover(e)
+        changeTextColor("black")
+      }}
+    >
       <Card
         style={{
           marginBottom: "40px",
@@ -37,10 +48,20 @@ function BlogPost(props) {
             title={props.title}
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              style={{ color: textColor }}
+              gutterBottom
+              variant="h5"
+              component="h2"
+            >
               {props.title}
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
+            <Typography
+              style={{ color: textColor }}
+              variant="body2"
+              color="textSecondary"
+              component="p"
+            >
               {props.description}
             </Typography>
           </CardContent>
