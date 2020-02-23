@@ -9,31 +9,31 @@ import Footer from "./Footer"
 import Tradr from "./Tradr"
 import GiffyGuesser from "./GiffyGuesser"
 import Home from "./Home"
-import Cursor from "./Cursor"
+// import Cursor from "./Cursor"
 
 function App(props) {
-  const [xcord, changex] = useState(0)
-  const [ycord, changey] = useState(0)
-  const [cursorClasses, changeClasses] = useState(["cursor"])
+  // const [xcord, changex] = useState(0)
+  // const [ycord, changey] = useState(0)
+  // const [cursorClasses, changeClasses] = useState(["cursor"])
 
   return (
     <div
       className="App"
-      onMouseMove={e => {
-        changex(e.pageX + "px")
-        changey(e.pageY + "px")
-      }}
-      onMouseDown={() => {
-        changeClasses([...cursorClasses, "mouse-down"])
-      }}
-      onMouseUp={() => {
-        changeClasses(
-          cursorClasses.filter(className => className !== "mouse-down")
-        )
-      }}
+      // onMouseMove={e => {
+      //   changex(e.pageX + "px")
+      //   changey(e.pageY + "px")
+      // }}
+      // onMouseDown={() => {
+      //   changeClasses([...cursorClasses, "mouse-down"])
+      // }}
+      // onMouseUp={() => {
+      //   changeClasses(
+      //     cursorClasses.filter(className => className !== "mouse-down")
+      //   )
+      // }}
     >
       <Header history={props.history} />
-      <Cursor classes={cursorClasses} xcord={xcord} ycord={ycord} />
+      {/* <Cursor classes={cursorClasses} xcord={xcord} ycord={ycord} /> */}
       <Switch>
         <Route path="/blogs" render={() => <BlogContainer />} />
         <Route path="/projects/tradr" render={() => <Tradr />} />

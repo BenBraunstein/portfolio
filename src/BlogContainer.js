@@ -7,7 +7,7 @@ function BlogContainer(props) {
     <div>
       <h2>Blog Posts</h2>
       <Grid style={{ padding: "50px" }} container spacing={3}>
-        {/* <Grid style={{ flexBasis: "auto" }} item s>
+        {/* <Grid style={{ flexBasis: "auto"}} item s>
           <BlogPost
             image=""
             title=""
