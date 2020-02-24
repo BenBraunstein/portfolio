@@ -27,8 +27,11 @@ function App(props) {
     <div
       className="App"
       onMouseMove={e => {
-        changex(e.pageX + "px")
-        changey(e.pageY + "px")
+        // changex(e.pageX + "px")
+        // changey(e.pageY + "px")
+        const cursor = document.querySelector(".cursor")
+        cursor.style.left = `${e.pageX}px`
+        cursor.style.top = `${e.pageY}px`
       }}
       onMouseDown={() => {
         changeClasses([...cursorClasses, "mouse-down"])
@@ -60,7 +63,12 @@ function App(props) {
         <Route path="/projects/giffyguesser" render={() => <GiffyGuesser />} />
         <Route path="/projects" render={() => <ProjectContainer />} />
         <Route path="/contact" render={() => <Contact />} />
-        <Route path="/" render={() => <Home />} />
+        <Route
+          path="/"
+          render={() => (
+            <Home blogHover={blogHover} blogUnHover={blogUnHover} />
+          )}
+        />
       </Switch>
       <Footer date={new Date()} />
     </div>
