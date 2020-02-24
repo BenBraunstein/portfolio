@@ -12,8 +12,6 @@ import Home from "./Home"
 import Cursor from "./Cursor"
 
 function App(props) {
-  const [xcord, changex] = useState(0)
-  const [ycord, changey] = useState(0)
   const [cursorClasses, changeClasses] = useState(["cursor"])
 
   const blogHover = e => {
@@ -27,8 +25,6 @@ function App(props) {
     <div
       className="App"
       onMouseMove={e => {
-        // changex(e.pageX + "px")
-        // changey(e.pageY + "px")
         const cursor = document.querySelector(".cursor")
         cursor.style.left = `${e.pageX}px`
         cursor.style.top = `${e.pageY}px`
@@ -51,7 +47,7 @@ function App(props) {
       }}
     >
       <Header history={props.history} />
-      <Cursor classes={cursorClasses} xcord={xcord} ycord={ycord} />
+      <Cursor classes={cursorClasses} />
       <Switch>
         <Route
           path="/blogs"
