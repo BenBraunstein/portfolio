@@ -43,14 +43,41 @@ function ProjectContainer(props) {
         showLabels
         className={classes.root}
       >
-        <BottomNavigationAction label="Tradr" icon={<PeopleIcon />} />
+        <BottomNavigationAction
+          label="Tradr"
+          icon={<PeopleIcon />}
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "red"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        />
         <BottomNavigationAction
           label="Giffy Guesser"
           icon={<VideogameAssetIcon />}
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "red"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
         />
         <BottomNavigationAction
           label="Fact Fun"
           icon={<NotListedLocationIcon />}
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "red"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
         />
       </BottomNavigation>
     </div>
