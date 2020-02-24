@@ -60,7 +60,12 @@ function App(props) {
         />
         <Route path="/projects/tradr" render={() => <Tradr />} />
         <Route path="/projects/giffyguesser" render={() => <GiffyGuesser />} />
-        <Route path="/projects" render={() => <ProjectContainer />} />
+        <Route
+          path="/projects"
+          render={() => (
+            <ProjectContainer blogHover={blogHover} blogUnHover={blogUnHover} />
+          )}
+        />
         <Route path="/contact" render={() => <Contact />} />
         <Route
           path="/"

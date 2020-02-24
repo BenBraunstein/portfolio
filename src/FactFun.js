@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-function FactFun() {
+function FactFun(props) {
   const classes = useStyles()
   const [imageModal, changeImageModal] = useState(false)
   const [currentImage, changeCurrentImage] = useState({})
@@ -104,7 +104,16 @@ function FactFun() {
         Either way, it's fun!
       </p>
       <h2>Screenshots</h2>
-      <Container key="FactFun" className={classes.root}>
+      <Container
+        key="FactFun"
+        className={classes.root}
+        onMouseOver={e => {
+          props.blogHover(e)
+        }}
+        onMouseOut={e => {
+          props.blogUnHover(e)
+        }}
+      >
         {/* Here is the image scroller */}
         <GridList className={classes.gridList} cols={2.5}>
           {tileData.map(tile => (
@@ -151,14 +160,46 @@ function FactFun() {
         </Fade>
       </Modal>
       <h2>
-        <a href="https://github.com/BenBraunstein/Fact-Fun">Front-End Github</a>{" "}
+        <a
+          href="https://github.com/BenBraunstein/Fact-Fun"
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "orange"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        >
+          Front-End Github
+        </a>{" "}
         |{" "}
-        <a href="https://github.com/nicholasstano/Fact-Fun-Backend">
+        <a
+          href="https://github.com/nicholasstano/Fact-Fun-Backend"
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "orange"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        >
           Back-End Github
         </a>
       </h2>
       <h2>
-        <a href="https://benbraunstein.github.io/Fact-Fun/test.html">
+        <a
+          href="https://benbraunstein.github.io/Fact-Fun/test.html"
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "orange"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        >
           Try it on GitHub Pages!
         </a>
       </h2>

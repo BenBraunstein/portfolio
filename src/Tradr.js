@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-function Tradr() {
+function Tradr(props) {
   const classes = useStyles()
   const [imageModal, changeImageModal] = useState(false)
   const [currentImage, changeCurrentImage] = useState({})
@@ -127,7 +127,16 @@ function Tradr() {
         <li>Users of the application can chat using Text and Emoji.</li>
       </ul>
       <h2>Screenshots</h2>
-      <Container key="Tradr" className={classes.root}>
+      <Container
+        key="Tradr"
+        className={classes.root}
+        onMouseOver={e => {
+          props.blogHover(e)
+        }}
+        onMouseOut={e => {
+          props.blogUnHover(e)
+        }}
+      >
         {/* Here is the image scroller */}
         <GridList className={classes.gridList} cols={2.5}>
           {tileData.map(tile => (
@@ -174,16 +183,48 @@ function Tradr() {
         </Fade>
       </Modal>
       <h2>
-        <a href="https://github.com/BenBraunstein/tradr-front">
+        <a
+          href="https://github.com/BenBraunstein/tradr-front"
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "orange"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        >
           Front-End Github
         </a>{" "}
         |{" "}
-        <a href="https://github.com/MildlyConfused/tradr-backend">
+        <a
+          href="https://github.com/MildlyConfused/tradr-backend"
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "orange"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        >
           Back-End Github
         </a>
       </h2>
       <h2>
-        <a href="https://tradr-frontend.herokuapp.com/">Try it on Heroku!</a>
+        <a
+          href="https://tradr-frontend.herokuapp.com/"
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "orange"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        >
+          Try it on Heroku!
+        </a>
       </h2>
       <br />
     </div>

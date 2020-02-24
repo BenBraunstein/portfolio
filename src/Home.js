@@ -9,7 +9,10 @@ function Home(props) {
         blogHover={props.blogHover}
         blogUnHover={props.blogUnHover}
       />
-      <ProjectContainer />
+      <ProjectContainer
+        blogHover={props.blogHover}
+        blogUnHover={props.blogUnHover}
+      />
     </div>
   )
 }

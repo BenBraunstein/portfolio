@@ -26,7 +26,7 @@ function BlogPost(props) {
       href={props.href}
       onMouseOver={e => {
         props.blogHover(e)
-        changeTextColor("blue")
+        changeTextColor("#3F51B5")
       }}
       onMouseOut={e => {
         props.blogUnHover(e)

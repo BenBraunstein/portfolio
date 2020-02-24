@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-function GiffyGuesser() {
+function GiffyGuesser(props) {
   const classes = useStyles()
   const [imageModal, changeImageModal] = useState(false)
   const [currentImage, changeCurrentImage] = useState({})
@@ -112,7 +112,16 @@ function GiffyGuesser() {
         games as well as your overall statistics in all game types.
       </p>
       <h2>Screenshots</h2>
-      <Container key="GiffyGuesser" className={classes.root}>
+      <Container
+        key="GiffyGuesser"
+        className={classes.root}
+        onMouseOver={e => {
+          props.blogHover(e)
+        }}
+        onMouseOut={e => {
+          props.blogUnHover(e)
+        }}
+      >
         {/* Here is the image scroller */}
         <GridList className={classes.gridList} cols={2.5}>
           {tileData.map(tile => (
@@ -159,10 +168,34 @@ function GiffyGuesser() {
         </Fade>
       </Modal>
       <h2>
-        <a href="https://github.com/BenBraunstein/GifGame">Github Page</a>
+        <a
+          href="https://github.com/BenBraunstein/GifGame"
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "orange"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        >
+          Github Page
+        </a>
       </h2>
       <h2>
-        <a href="https://giffyguesser.herokuapp.com/">Try it on Heroku!</a>
+        <a
+          href="https://giffyguesser.herokuapp.com/"
+          onMouseOver={e => {
+            props.blogHover(e)
+            e.target.style.color = "orange"
+          }}
+          onMouseOut={e => {
+            props.blogUnHover(e)
+            e.target.style.color = ""
+          }}
+        >
+          Try it on Heroku!
+        </a>
       </h2>
       <br />
     </div>

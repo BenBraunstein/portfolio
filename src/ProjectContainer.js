@@ -15,16 +15,25 @@ const useStyles = makeStyles({
   }
 })
 
-function ProjectContainer() {
+function ProjectContainer(props) {
   const classes = useStyles()
   const [value, setValue] = React.useState(0)
 
   return (
     <div className="projects">
       <h1>Projects</h1>
-      {value === 0 ? <Tradr /> : null}
-      {value === 1 ? <GiffyGuesser /> : null}
-      {value === 2 ? <FactFun /> : null}
+      {value === 0 ? (
+        <Tradr blogHover={props.blogHover} blogUnHover={props.blogUnHover} />
+      ) : null}
+      {value === 1 ? (
+        <GiffyGuesser
+          blogHover={props.blogHover}
+          blogUnHover={props.blogUnHover}
+        />
+      ) : null}
+      {value === 2 ? (
+        <FactFun blogHover={props.blogHover} blogUnHover={props.blogUnHover} />
+      ) : null}
 
       <BottomNavigation
         value={value}
