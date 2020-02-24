@@ -15,12 +15,10 @@ function App(props) {
   const blogHover = e => {
     const cursor = document.querySelector(".cursor")
     cursor.style.transform = "scale(1.5)"
-    cursor.style.background = "black"
   }
   const blogUnHover = e => {
     const cursor = document.querySelector(".cursor")
     cursor.style.transform = ""
-    cursor.style.background = ""
   }
 
   return (
