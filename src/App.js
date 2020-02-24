@@ -30,20 +30,23 @@ function App(props) {
         cursor.style.top = `${e.pageY}px`
       }}
       onMouseDown={() => {
-        changeClasses([...cursorClasses, "mouse-down"])
+        // changeClasses([...cursorClasses, "mouse-down"])
+        const cursor = document.querySelector(".cursor")
+        cursor.style.border = "2px solid cornflowerblue"
+        cursor.style.background = "cornflowerblue"
       }}
       onMouseUp={() => {
-        changeClasses(
-          cursorClasses.filter(className => className !== "mouse-down")
-        )
+        const cursor = document.querySelector(".cursor")
+        cursor.style.border = ""
+        cursor.style.background = ""
       }}
       onMouseLeave={() => {
-        changeClasses([...cursorClasses, "mouse-left"])
+        const cursor = document.querySelector(".cursor")
+        cursor.style.display = "none"
       }}
       onMouseEnter={() => {
-        changeClasses(
-          cursorClasses.filter(className => className !== "mouse-left")
-        )
+        const cursor = document.querySelector(".cursor")
+        cursor.style.display = ""
       }}
     >
       <Header history={props.history} />
