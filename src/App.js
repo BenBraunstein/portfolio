@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Header from "./Header"
 import BlogContainer from "./BlogContainer"
 import { Route, Switch, withRouter } from "react-router-dom"
@@ -12,13 +12,15 @@ import Home from "./Home"
 import Cursor from "./Cursor"
 
 function App(props) {
-  const [cursorClasses, changeClasses] = useState(["cursor"])
-
   const blogHover = e => {
-    changeClasses([...cursorClasses, "img-grow"])
+    const cursor = document.querySelector(".cursor")
+    cursor.style.transform = "scale(1.5)"
+    cursor.style.background = "black"
   }
   const blogUnHover = e => {
-    changeClasses(cursorClasses.filter(className => className !== "img-grow"))
+    const cursor = document.querySelector(".cursor")
+    cursor.style.transform = ""
+    cursor.style.background = ""
   }
 
   return (
@@ -50,7 +52,7 @@ function App(props) {
       }}
     >
       <Header history={props.history} />
-      <Cursor classes={cursorClasses} />
+      <Cursor />
       <Switch>
         <Route
           path="/blogs"

@@ -26,11 +26,11 @@ function BlogPost(props) {
       href={props.href}
       onMouseOver={e => {
         props.blogHover(e)
-        // changeTextColor("blue")
+        changeTextColor("blue")
       }}
       onMouseOut={e => {
         props.blogUnHover(e)
-        // changeTextColor("black")
+        changeTextColor("black")
       }}
     >
       <Card
