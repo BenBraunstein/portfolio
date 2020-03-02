@@ -30,7 +30,6 @@ function App(props) {
         cursor.style.top = `${e.pageY}px`
       }}
       onMouseDown={() => {
-        // changeClasses([...cursorClasses, "mouse-down"])
         const cursor = document.querySelector(".cursor")
         cursor.style.border = "2px solid cornflowerblue"
         cursor.style.background = "cornflowerblue"
