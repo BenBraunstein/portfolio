@@ -43,11 +43,13 @@ function App(props) {
       }}
       onMouseLeave={() => {
         const cursor = document.querySelector(".cursor")
-        cursor.style.display = "none"
+        cursor.classList.add("mouse-left")
+        // cursor.style.display = "none"
       }}
       onMouseEnter={() => {
         const cursor = document.querySelector(".cursor")
-        cursor.style.display = ""
+        cursor.classList.remove("mouse-left")
+        // cursor.style.display = ""
       }}
     >
       <Header history={props.history} />
