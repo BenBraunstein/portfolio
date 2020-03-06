@@ -15,13 +15,11 @@ function App(props) {
   const blogHover = e => {
     const cursor = document.querySelector(".cursor")
     cursor.classList.add("img-grow")
-
-    // cursor.style.transform = "scale(1.5)"
   }
+
   const blogUnHover = e => {
     const cursor = document.querySelector(".cursor")
     cursor.classList.remove("img-grow")
-    // cursor.style.transform = ""
   }
 
   return (
@@ -35,24 +33,18 @@ function App(props) {
       onMouseDown={() => {
         const cursor = document.querySelector(".cursor")
         cursor.classList.add("mouse-down")
-        // cursor.style.border = "2px solid cornflowerblue"
-        // cursor.style.background = "cornflowerblue"
       }}
       onMouseUp={() => {
         const cursor = document.querySelector(".cursor")
         cursor.classList.remove("mouse-down")
-        // cursor.style.border = ""
-        // cursor.style.background = ""
       }}
       onMouseLeave={() => {
         const cursor = document.querySelector(".cursor")
         cursor.classList.add("mouse-left")
-        // cursor.style.display = "none"
       }}
       onMouseEnter={() => {
         const cursor = document.querySelector(".cursor")
         cursor.classList.remove("mouse-left")
-        // cursor.style.display = ""
       }}
     >
       <Header history={props.history} />
