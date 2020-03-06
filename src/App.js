@@ -31,13 +31,15 @@ function App(props) {
       }}
       onMouseDown={() => {
         const cursor = document.querySelector(".cursor")
-        cursor.style.border = "2px solid cornflowerblue"
-        cursor.style.background = "cornflowerblue"
+        cursor.classList.add("mouse-down")
+        // cursor.style.border = "2px solid cornflowerblue"
+        // cursor.style.background = "cornflowerblue"
       }}
       onMouseUp={() => {
         const cursor = document.querySelector(".cursor")
-        cursor.style.border = ""
-        cursor.style.background = ""
+        cursor.classList.remove("mouse-down")
+        // cursor.style.border = ""
+        // cursor.style.background = ""
       }}
       onMouseLeave={() => {
         const cursor = document.querySelector(".cursor")
