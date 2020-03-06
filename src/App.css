@@ -27,7 +27,7 @@
 
 .img-grow {
   transform: scale(1.5);
-  background: black;
+  /* background: black; */
 }
 
 .li-hover {

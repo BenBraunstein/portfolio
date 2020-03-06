@@ -14,11 +14,14 @@ import Cursor from "./Cursor"
 function App(props) {
   const blogHover = e => {
     const cursor = document.querySelector(".cursor")
-    cursor.style.transform = "scale(1.5)"
+    cursor.classList.add("img-grow")
+
+    // cursor.style.transform = "scale(1.5)"
   }
   const blogUnHover = e => {
     const cursor = document.querySelector(".cursor")
-    cursor.style.transform = ""
+    cursor.classList.remove("img-grow")
+    // cursor.style.transform = ""
   }
 
   return (
