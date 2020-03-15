@@ -76,6 +76,10 @@ function GiffyGuesser(props) {
       title:
         "Admin Center where you can use our bot to approve new questions and check overall statistics",
       url: "https://i.imgur.com/1mpovGX.png"
+    },
+    {
+      title: "Approving / Denying some new questions",
+      url: "https://i.imgur.com/ebMp3Wt.png"
     }
   ]
 
