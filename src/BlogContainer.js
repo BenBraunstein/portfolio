@@ -21,6 +21,16 @@ function BlogContainer(props) {
           <BlogPost
             blogHover={props.blogHover}
             blogUnHover={props.blogUnHover}
+            image="https://miro.medium.com/max/1125/0*ZfVjFrQ0MVBi03Jf"
+            title="Awesome PowerShell Tools and Tricks"
+            href="https://medium.com/@benzbraunstein/awesome-powershell-tools-and-tricks-a60b00eda8ba"
+            description="Last week, I told everyone my story of how I learned PowerShell to remotely get the amount of RAM and number of sticks in every PC on my company’s network. Since then, I have been receiving questions about the difficulty of this and what other kinds of things an IT administrator might want to use PowerShell for. I’m not going to explain exactly how all of this is done, but I will give some short examples and show you some awesome other..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item s>
+          <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/1470/0*iNJFfIXTXpLNCh8c.png"
             title="The Power of… PowerShell"
             href="https://medium.com/@benzbraunstein/the-power-of-powershell-93111fdb8573"
