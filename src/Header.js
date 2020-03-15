@@ -52,11 +52,11 @@ function Header(props) {
         <ListItem button onClick={() => props.history.push("/")}>
           Home
         </ListItem>
-        <ListItem button onClick={() => props.history.push("/projects")}>
-          Projects
-        </ListItem>
         <ListItem button onClick={() => props.history.push("/blogs")}>
           Blog Posts
+        </ListItem>
+        <ListItem button onClick={() => props.history.push("/projects")}>
+          Projects
         </ListItem>
         <a
           style={{ color: "black", textDecoration: "none" }}
