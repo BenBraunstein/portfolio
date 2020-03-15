@@ -71,6 +71,11 @@ function GiffyGuesser(props) {
       title: "Incorrectly Answered Movie Question",
       url:
         "https://camo.githubusercontent.com/354a1ac43df9e67fae92794d935c4ec4bb1809de/68747470733a2f2f692e696d6775722e636f6d2f33434e397043752e706e67"
+    },
+    {
+      title:
+        "Admin Center where you can use our bot to approve new questions and check overall statistics",
+      url: "https://i.imgur.com/1mpovGX.png"
     }
   ]
 
