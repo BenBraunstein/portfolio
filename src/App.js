@@ -10,6 +10,7 @@ import Tradr from "./Tradr"
 import GiffyGuesser from "./GiffyGuesser"
 import Home from "./Home"
 import Cursor from "./Cursor"
+import Resume from "./Resume"
 
 function App(props) {
   const blogHover = e => {
@@ -65,6 +66,7 @@ function App(props) {
           )}
         />
         <Route path="/contact" render={() => <Contact />} />
+        <Route path="/resume" render={() => <Resume />} />
         <Route
           path="/"
           render={() => (
