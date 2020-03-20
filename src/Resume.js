@@ -3,10 +3,16 @@ import reactJpg from "./images/resume.jpg"
 import { Button } from "@material-ui/core"
 import SaveIcon from "@material-ui/icons/Save"
 
-function Resume() {
+function Resume(props) {
   return (
     <div>
-      <img src={reactJpg} alt="Resume" width="1000px" />
+      <img
+        onMouseOver={e => props.blogHover(e)}
+        onMouseOut={e => props.blogUnHover(e)}
+        src={reactJpg}
+        alt="Resume"
+        width="1000px"
+      />
       <br />
       <Button
         variant="contain"

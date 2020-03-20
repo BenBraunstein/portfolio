@@ -66,7 +66,12 @@ function App(props) {
           )}
         />
         <Route path="/contact" render={() => <Contact />} />
-        <Route path="/resume" render={() => <Resume />} />
+        <Route
+          path="/resume"
+          render={() => (
+            <Resume blogHover={blogHover} blogUnHover={blogUnHover} />
+          )}
+        />
         <Route
           path="/"
           render={() => (
