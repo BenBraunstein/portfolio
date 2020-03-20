@@ -25,6 +25,10 @@
   z-index: 999;
 }
 
+.image-gray {
+  backdrop-filter: grayscale();
+}
+
 .img-grow {
   transform: scale(1.5);
   /* background: black; */
