@@ -21,6 +21,16 @@ function BlogContainer(props) {
           <BlogPost
             blogHover={props.blogHover}
             blogUnHover={props.blogUnHover}
+            image="https://miro.medium.com/max/1400/0*Q9mh7tBdUNGWglm9"
+            title="The various lengths of CSS"
+            href="https://medium.com/@benzbraunstein/the-various-lengths-of-css-1a4d5d87438b"
+            description="Cascading Style Sheets, known as CSS is truly awesome. Before CSS came around, webpages looked pretty boring just like this. CSS can be used to place elements in different places on a webpage and gives developers the ability to design a webpage any way the want to. You can even use CSS to create awesome animations like the ones below. CSS can really differentiate a beginner Front-End Developer from a Novice or Expert and is a fantastic tool for all Web Developers to at least have a basic understanding of..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item s>
+          <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/1125/0*ZfVjFrQ0MVBi03Jf"
             title="Awesome PowerShell Tools and Tricks"
             href="https://medium.com/@benzbraunstein/awesome-powershell-tools-and-tricks-a60b00eda8ba"
