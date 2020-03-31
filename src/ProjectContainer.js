@@ -7,15 +7,8 @@ import PeopleIcon from "@material-ui/icons/People"
 import VideogameAssetIcon from "@material-ui/icons/VideogameAsset"
 import NotListedLocationIcon from "@material-ui/icons/NotListedLocation"
 
-// const useStyles = makeStyles({
-//   root: {
-//     width: "100%",
-//     backgroundColor: "gold"
-//   }
-// })
 
 function ProjectContainer(props) {
-  // const classes = useStyles()
   const [value, setValue] = React.useState(0)
 
   return (
@@ -40,7 +33,6 @@ function ProjectContainer(props) {
           setValue(newValue)
         }}
         showLabels
-        // className={classes.root}
         id="bottom-nav"
       >
         <BottomNavigationAction
