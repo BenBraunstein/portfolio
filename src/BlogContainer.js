@@ -21,6 +21,16 @@ function BlogContainer(props) {
           <BlogPost
             blogHover={props.blogHover}
             blogUnHover={props.blogUnHover}
+            image="https://miro.medium.com/max/1400/0*1V5S98AVMNKo5Gyi"
+            title="How to begin using React Native with Chrome with WSL 2"
+            href="https://medium.com/@benzbraunstein/how-to-begin-using-react-native-with-chrome-with-wsl-2-266c738d05a9"
+            description="Mobile apps are all around us today. If you own a mobile device or a tablet, you are using for all sorts of things such as image capture, social media, games, browsing the web and practically anything you do on your devices. Mobile apps are becoming so popular because they are accessible to our fingertips at almost all times. Instead of grabbing a laptop, powering it on, opening up your web browser of choice..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item s>
+          <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/1400/0*Q9mh7tBdUNGWglm9"
             title="The various lengths of CSS"
             href="https://medium.com/@benzbraunstein/the-various-lengths-of-css-1a4d5d87438b"
