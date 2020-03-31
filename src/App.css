@@ -22,14 +22,14 @@
 #footer {
   position: fixed;
   background-color: gold;
-  bottom: 0;
+  bottom: 0px;
   width: 100vw;
-  padding-top: 0.5vmin;
-  padding-bottom: 0.5vmin;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .extra-bottom-padding {
-  padding-bottom: 8vh;
+  padding-bottom: 100px;
 }
 
 .cursor {
