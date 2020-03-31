@@ -11,7 +11,7 @@ function Resume(props) {
         onMouseOut={e => props.blogUnHover(e)}
         src={reactJpg}
         alt="Resume"
-        width="1000px"
+        style={{ width: "85vmin" }}
       />
       <br />
       <Button
