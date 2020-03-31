@@ -5,7 +5,7 @@ import SaveIcon from "@material-ui/icons/Save"
 
 function Resume(props) {
   return (
-    <div>
+    <div className="extra-bottom-padding">
       <img
         onMouseOver={e => props.blogHover(e)}
         onMouseOut={e => props.blogUnHover(e)}

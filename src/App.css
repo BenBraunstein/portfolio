@@ -4,11 +4,32 @@
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+#bottom-nav {
+  background-color: gold;
+  position: fixed;
+  width: 100vw;
+  bottom: 60px;
+}
+
+#footer {
+  position: fixed;
+  background-color: gold;
+  bottom: 0;
+  width: 100vw;
+  padding-top: 0.5vmin;
+  padding-bottom: 0.5vmin;
+}
+
+.extra-bottom-padding {
+  padding-bottom: 8vh;
 }
 
 .cursor {
