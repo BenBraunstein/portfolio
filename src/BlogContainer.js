@@ -21,6 +21,16 @@ function BlogContainer(props) {
           <BlogPost
             blogHover={props.blogHover}
             blogUnHover={props.blogUnHover}
+            image="https://miro.medium.com/max/700/1*c7dgCsgSR2dSWp74vw03BA.png"
+            title="How to Install Elementary OS alongside Windows"
+            href="https://medium.com/@benzbraunstein/how-to-install-elementary-os-alongside-windows-915a2b4b0719"
+            description="A few months ago, I wrote a blog post about my struggle trying to adapt my development environment back to Windows from macOS. You can read more about that here. In that article, I explained what the Windows Subsystem for Linux (WSL) is and why its an awesome tool for Windows developers to use. TLDR: WSL is a way to run a linux command line from within Windows 10 and its honestly really cool and easy to set up..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item s>
+          <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/748/0*HEKf68WSeOXTueE3"
             title="How to create a Fixed Footer using HTML and CSS"
             href="https://medium.com/@benzbraunstein/how-to-create-a-fixed-footer-using-html-and-css-a254f41406d3"
