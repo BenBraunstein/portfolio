@@ -21,6 +21,16 @@ function BlogContainer(props) {
           <BlogPost
             blogHover={props.blogHover}
             blogUnHover={props.blogUnHover}
+            image="https://miro.medium.com/max/748/0*HEKf68WSeOXTueE3"
+            title="How to create a Fixed Footer using HTML and CSS"
+            href="https://medium.com/@benzbraunstein/how-to-create-a-fixed-footer-using-html-and-css-a254f41406d3"
+            description="Have you ever wondered how many websites have a footer stuck (this can be done with any element really!) on the bottom of the display and not just at the end of the page after the rest of the content ? Well if your like me this is something I have been interested in doing for a while. As part of my goal to improve on my CSS skills, I thought it was a great idea and try to learn how to implement this correctly. After a quick google search..."
+          />
+        </Grid>
+        <Grid style={{ flexBasis: "auto" }} item s>
+          <BlogPost
+            blogHover={props.blogHover}
+            blogUnHover={props.blogUnHover}
             image="https://miro.medium.com/max/1400/0*1V5S98AVMNKo5Gyi"
             title="How to begin using React Native with Chrome with WSL 2"
             href="https://medium.com/@benzbraunstein/how-to-begin-using-react-native-with-chrome-with-wsl-2-266c738d05a9"
