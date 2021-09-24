@@ -58,12 +58,9 @@ function Header(props) {
         <ListItem button onClick={() => props.history.push("/projects")}>
           Projects
         </ListItem>
-        <a
-          style={{ color: "black", textDecoration: "none" }}
-          href="https://drive.google.com/file/d/1EJgfyx25avaljimph8u-wxxjEWGgH0ix/view?usp=sharing"
-        >
-          <ListItem>Resume</ListItem>
-        </a>
+        <ListItem button onClick={() => props.history.push("/resume")}>
+          Resume
+        </ListItem>
         <ListItem button onClick={() => props.history.push("/contact")}>
           Contact
         </ListItem>

@@ -4,11 +4,32 @@
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+#bottom-nav {
+  background-color: gold;
+  position: fixed;
+  width: 100vw;
+  bottom: 60px;
+}
+
+#footer {
+  position: fixed;
+  background-color: gold;
+  bottom: 0px;
+  width: 100vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.extra-bottom-padding {
+  padding-bottom: 100px;
 }
 
 .cursor {
@@ -23,6 +44,7 @@
   transition-property: background, border, transform;
   transform-origin: 150% 150%;
   z-index: 999;
+  backdrop-filter: grayscale();
 }
 
 .img-grow {
